@@ -1,0 +1,27 @@
+html{
+  font-size: 62.5%;
+
+}
+
+body{
+  background-color: #f8f9fa;
+}
+.section_2{
+  padding: 0rem;
+}
+.nav_container{
+  width: 10rem;
+  height: 0.9rem;
+}
+.logo{
+  width:10rem;
+  height:2.6rem;
+  margin-top: 1.5rem;
+  margin-left:3rem;
+}
+.user_info_box{
+  margin-top: .4rem;
+  margin-left: 118.5rem;
+  width: 15rem;
+  height: 3.7rem;
+}

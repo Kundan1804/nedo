@@ -1,0 +1,100 @@
+#order_rfq1{
+   font-family: Poppins;
+}
+#order_rfq1 .page-wrapper{
+    font-family: Poppins;
+    background-color: #f8f9fa;
+}
+#order_rfq1 .order_history{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#order_rfq1 .get-btn {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFFFF; /* white */
+    background: #535CE8FF; /* primary-500 */
+    opacity: 1; 
+    padding: 0.3rem;
+    border: none; 
+    border-radius: 4px; /* border-s */
+  }
+  /* Hover */
+#order_rfq1 .get-btn:hover {
+    color: #FFFFFFFF; /* white */
+    background: #3A45E4FF; /* primary-550 */
+  }
+  /* Pressed */
+#order_rfq1 .get-btn:hover:active {
+    color: #FFFFFFFF; /* white */
+    background: #202DE1FF; /* primary-600 */
+  }
+  /* Disabled */
+#order_rfq1 .get-btn:disabled {
+    opacity: 0.4; 
+  }
+#order_rfq1 .tknuckle{
+    font-family: Poppins; 
+    color: #16BC9CFF; 
+  }
+#order_rfq1 .below_knuckle {
+    font-family: Poppins; 
+    color: #171A1FFF; /* neutral-900 */
+  }
+#order_rfq1 .img_menu{
+    margin-right: 0.5rem;
+}
+
+#order_rfq1 .copy-btn {
+   
+    color: #535CE8FF; /* primary-500 */
+    background: #FFFFFFFF; /* white */
+    opacity: 1; 
+    border: 1px solid [object Object]; 
+    border-radius: 4px; /* border-s */
+  }
+  /* Hover */
+  #order_rfq1 .copy-btn:hover {
+    color: #3A45E4FF; /* primary-550 */
+    background: #FFFFFFFF; /* white */
+  }
+  /* Pressed */
+  #order_rfq1 .copy-btn:hover:active {
+    color: #202DE1FF; /* primary-600 */
+    background: #FFFFFFFF; /* white */
+  }
+  /* Disabled */
+  #order_rfq1 .copy-btn:disabled {
+    opacity: 0.4; 
+  }
+
+  #order_rfq1 .blog-card{
+    display: flex;
+    flex-direction: row;
+  }
+  #order_rfq1 .btn_order_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #order_rfq1 .part{
+    
+    display: flex;
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+  }
+  #order_rfq1 .img_3d{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  #order_rfq1 .delete_part{
+    /* display: flex; */
+    padding-top: 1rem;
+  }
+  #order_rfq1 .left_bar{
+    padding-top: 6rem;
+  }

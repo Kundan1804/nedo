@@ -1,0 +1,571 @@
+
+
+body{
+   background-color: #f8f9fa;
+}
+#customer_sign_in .main_content{
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #f8f9fa;
+    
+    
+}
+#customer_sign_in .one_col{
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f9fa;
+    /* padding-top: 2.8rem; */
+    /* padding-left: 10rem; */
+    /* width: 90%; */
+}
+#customer_sign_in .sign_in_btn{
+  display: flex;
+  justify-content: center;
+}
+#customer_sign_in .company_information_header{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#customer_sign_in2 .company_information_header{
+  
+  font-family: Poppins; 
+  font-size: 32px; 
+  line-height: 48px; 
+  color: #171A1FFF; /* neutral-900 */
+}
+
+
+
+#customer_sign_in2 .company_information_header{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#customer_sign_in .text_box{
+    display: flex;
+    background-color: white;
+    
+}
+
+#customer_sign_in2 .text_box{
+  display: flex;
+  background-color: white;
+  
+}
+#customer_sign_in .next_btn{
+    display: flex;
+    justify-content: end;
+}
+#customer_sign_in .add_more_btn{
+    display: flex;
+    justify-items: center;
+    justify-content: end;
+    padding-top: 2.5rem;
+}
+#customer_sign_in .btn_add_more{
+    border: 0rem;
+    background-color: #f8f9fa;
+}
+#customer_sign_in .next_btn2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+#customer_sign_in .process_row{
+    display: flex;
+    /* background-color: white; */
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+    
+
+}
+#customer_sign_in .process_col{
+  border-radius: 2rem;
+    background: white;
+    box-shadow: 5px 5px 15px #bebebe,
+                  -5px -5px 15px #ffffff;
+}
+
+#customer_sign_in .login_body_row{
+    padding-right: 10%;
+}
+
+
+#customer_sign_in .logo-light{
+  height: 3rem;
+}
+#customer_sign_in2 .logo-light{
+  height: 3rem;
+}
+
+
+
+
+
+
+
+#customer_sign_in .tsign_in{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+}
+#customer_sign_in .temail{
+    display: flex;
+    color: black;
+    
+}
+#customer_sign_in .box_email{
+    margin-left: 2rem;
+}
+#customer_sign_in .text_box2{
+    margin-left: 1rem;
+
+}
+#text-e{
+  background-image: url(../img/mail.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  padding-left: 10%;
+  background-position-y:center;
+  background-position-x:5px ;
+  transition: border 200ms linear;
+}
+
+#text-p{
+  background-image: url(../img/lock.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  padding-left: 10%;
+  background-position-y:center;
+  background-position-x:5px ;
+  transition: border 200ms linear;
+}
+#text-e:focus{
+  background-color: white;
+  border: 4px solid #535de895;
+}
+#text-p:focus{
+  background-color: white;
+  border: 4px solid #535de895;
+}
+#text-e1{
+  background-image: url(../img/lock.svg);
+  background-repeat: no-repeat;
+  background-size: 3%;
+  padding-left: 10%;
+  background-position-y:center;
+  background-position-x:5px ;
+
+}
+
+
+#customer_sign_in .form-check3{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3rem;
+    justify-content: space-between;
+}
+#customer_sign_in .check_box{
+    display: flex;
+    
+    
+}
+#customer_sign_in .tremeber{
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+}
+#customer_sign_in .forgot {
+    color: #535CE8FF; /* primary-500 */
+    border: 0px;
+    background-color: white;
+    padding-top: 1.3rem;
+  }
+  #customer_sign_in .btn_sign_in {
+     
+    display: flex; 
+    justify-content: center;
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+    color: #FFFFFFFF; /* white */
+    background: #535CE8FF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 6px; /* border-m */
+  }
+  /* Hover */
+  #customer_sign_in .btn_sign_in:hover {
+    color: #FFFFFFFF; /* white */
+    background: #3A45E4FF; /* primary-550 */
+  }
+  /* Pressed */
+  #customer_sign_in .btn_sign_in:hover:active {
+    color: #FFFFFFFF; /* white */
+    background: #202DE1FF; /* primary-600 */
+  }
+  /* Disabled */
+  #customer_sign_in .btn_sign_in:disabled {
+    opacity: 0.4; 
+  }
+  #customer_sign_in .dont_have_acc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #customer_sign_in .btn_sign_up{ 
+    color: #535CE8FF; /* primary-500 */
+    border: 0;
+    background-color: white;
+  }
+  #customer_sign_in .tdont_have{
+    margin-bottom: 0rem;
+    color: #171A1FFF;
+  }
+
+
+  /* customer_sign_in2 page 2 */
+  #customer_sign_in2 .main_content{
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #f8f9fa;
+    
+}
+#customer_sign_in2 .one_col{
+    display: flex;
+    /* flex-direction: row; */
+    background-color: #f8f9fa;
+    /* padding-top: 2.8rem; */
+    /* padding-left: 10rem; */
+    /* width: 90%; */
+}
+#customer_sign_in2 .company_information_header{
+    display: flex;
+    justify-content: center;
+    
+}
+#customer_sign_in2 .text_box{
+    display: flex;
+    background-color: white;
+    
+}
+#customer_sign_in2 .next_btn{
+    display: flex;
+    justify-content: end;
+}
+#customer_sign_in2 .add_more_btn{
+    display: flex;
+    justify-items: center;
+    justify-content: end;
+    padding-top: 2.5rem;
+}
+#customer_sign_in2 .btn_add_more{
+    border: 0rem;
+    background-color: #f8f9fa;
+}
+#customer_sign_in2 .next_btn2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+#customer_sign_in2 .process_row{
+    display: flex;
+    background-color: #f8f9fa;
+    padding-top: 1rem;
+    /* padding-bottom: 3rem; */
+}
+#customer_sign_in2 .login_body_row{
+    padding-right: 0rem;
+}
+#customer_sign_in2 .tsign_in{
+    display: flex;
+    justify-content: center;
+}
+#customer_sign_in2 .temail{
+    display: flex;
+    color: black;
+    
+}
+#customer_sign_in2 .box_email{
+    margin-left: 2rem;
+}
+#customer_sign_in2 .text_box2{
+    margin-left: 1rem;
+    background-color: #f1f2fd;
+}
+#customer_sign_in2 .form-check3{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3rem;
+    justify-content: space-between;
+}
+#customer_sign_in2 .check_box{
+    display: flex; 
+}
+#customer_sign_in2 .tremeber{
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+}
+#customer_sign_in2 .forgot {
+    color: #535CE8FF; /* primary-500 */
+    border: 0px;
+    background-color: white;
+    padding-top: 1.3rem;
+  }
+  #customer_sign_in2 .btn_sign_in {
+     
+    display: flex; 
+    justify-content: center;
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+    color: #FFFFFFFF; /* white */
+    background: #535CE8FF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 6px; /* border-m */
+  }
+  /* Hover */
+  #customer_sign_in2 .btn_sign_in:hover {
+    color: #FFFFFFFF; /* white */
+    background: #3A45E4FF; /* primary-550 */
+  }
+  /* Pressed */
+  #customer_sign_in2 .btn_sign_in:hover:active {
+    color: #FFFFFFFF; /* white */
+    background: #202DE1FF; /* primary-600 */
+  }
+  /* Disabled */
+  #customer_sign_in2 .btn_sign_in:disabled {
+    opacity: 0.4; 
+  }
+  #customer_sign_in2 .dont_have_acc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #customer_sign_in2 .btn_sign_up{ 
+    color: #535CE8FF; /* primary-500 */
+    border: 0;
+    /* background-color: #f8f9fa; */
+    background-color: #f8f9fa;
+  }
+  #customer_sign_in2 .tdont_have{
+    margin-bottom: 0rem;
+    color: #171A1FFF;
+    display: flex;
+    justify-content: center;
+  }
+  #customer_sign_in2 .second_col{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFFFF; /* white */
+    border-radius: 12px; /* border-xl */
+    box-shadow: 0px 4px 9px #171a1f, 0px 0px 2px #171a1f; 
+  }
+  
+
+
+
+
+
+  #customer_sign_in2 .main_content{
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+#customer_sign_in2 .one_col{
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f9fa;
+    
+}
+#customer_sign_in2 .company_information_header{
+    display: flex;
+    justify-content: center;
+    
+}
+#customer_sign_in2 .text_box{
+    display: flex;
+    /* background-color: white; */
+    
+}
+#customer_sign_in2 .next_btn{
+    display: flex;
+    justify-content: end;
+}
+#manufaturing_login5 .add_more_btn{
+    display: flex;
+    justify-items: center;
+    justify-content: end;
+    padding-top: 2.5rem;
+}
+#customer_sign_in2 .btn_add_more{
+    border: 0rem;
+    background-color: #f8f9fa;
+    
+}
+#customer_sign_in2 .next_btn2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+#customer_sign_in2 .process_row{
+    display: flex;
+    /* background-color: white; */
+    justify-content: space-between;
+}
+#customer_sign_in2 .login_body_row{
+    padding-right: 10%;
+}
+#customer_sign_in2 .text_box2{
+    height: 4rem;
+    background-color: #f1f2fd;
+  }
+  #customer_sign_in2 .p_please_mention{
+    color: black;
+  }
+  #customer_sign_in2 .machine_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  #customer_sign_in2 .btn_back {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Public Sans; /* Body */
+    font-size: 16px; 
+    line-height: 26px; 
+    color: #FFFFFFFF; /* white */
+    background: #535CE8FF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 6px; /* border-m */
+    box-shadow: 0px 8px 17px #535CE8, 0px 0px 2px #535CE8; /* shadow-l */
+  }
+  /* Hover */
+  #customer_sign_in2 .btn_back:hover {
+    color: #FFFFFFFF; /* white */
+    background: #3A45E4FF; /* primary-550 */
+  }
+  /* Pressed */
+  #customer_sign_in2 .btn_back:hover:active {
+    color: #FFFFFFFF; /* white */
+    background: #202DE1FF; /* primary-600 */
+  }
+  /* Disabled */
+  #customer_sign_in2 .btn_back:disabled {
+    opacity: 0.4; 
+  }
+  #customer_sign_in2 .btn_sign{
+    background-color: #535CE8FF;
+  }
+  #customer_sign_in2 .row1{
+    display: flex;
+    
+  }
+  #customer_sign_in2 .tevery_part{
+    color: #bcc1ca;
+  }
+  #customer_sign_in2 .text_every{
+    display: flex;
+    justify-content: center;
+  }
+  #customer_sign_in2 .tincre{
+    display: flex;
+    justify-content: center;
+    color: #3d49e5;
+  }
+  #customer_sign_in2 .container{
+    display: flex;
+  }
+
+  #customer_sign_in .btn_quote {
+    
+    padding: 0 16px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Poppins; /* Body */
+    /* font-size: 16px;  */
+    /* line-height: 26px;  */
+    color: #FFFFFFFF; /* white */
+    background: #535CE8FF; /* primary-500 */
+    opacity: 1; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none; 
+    border-radius: 4px; /* border-s */
+    box-shadow: 0px 2px 5px #535CE8, 0px 0px 2px #535CE8; /* shadow-s */
+  }
+  /* Hover */
+  #customer_sign_in .btn_quote:hover {
+    color: #FFFFFFFF; /* white */
+    background: #3A45E4FF; /* primary-550 */
+  }
+  /* Pressed */
+  #customer_sign_in .btn_quote:hover:active {
+    color: #FFFFFFFF; /* white */
+    background: #202DE1FF; /* primary-600 */
+  }
+  /* Disabled */
+  #customer_sign_in .btn_quote:disabled {
+    opacity: 0.4; 
+  }
+
+  #customer_sign_in2 .btn_sign_up1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Poppins; /* Body */
+   
+    color: #FFFFFFFF; /* white */
+    background: #535CE8FF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 6px; /* border-m */
+    /* box-shadow: 0px 8px 17px #535CE8, 0px 0px 2px #535CE8; shadow-l */
+  }
+  /* Hover */
+  #customer_sign_in2 .btn_sign_up1:hover {
+    color: #FFFFFFFF; /* white */
+    background: #3A45E4FF; /* primary-550 */
+  }
+  /* Pressed */
+  #customer_sign_in2 .btn_sign_up1:hover:active {
+    color: #FFFFFFFF; /* white */
+    background: #202DE1FF; /* primary-600 */
+  }
+  /* Disabled */
+  #customer_sign_in2 .btn_sign_up1:disabled {
+    opacity: 0.4; 
+  }
+  #customer_sign_in2 .img_machine{
+    border-radius: 2rem;
+    background: white;
+    box-shadow: 5px 5px 15px #bebebe,
+                  -5px -5px 15px #ffffff;
+  }
+  #customer_sign_in2 .text_box{
+    
+      display: flex;
+      background-color: #f1f2fd;
+      
+  
+  }

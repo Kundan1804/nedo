@@ -1,0 +1,294 @@
+html {
+  font-family: Poppins;
+  font-size: 62.5%;
+
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: Poppins;
+
+}
+
+.stl_cont {}
+
+.three_model {}
+
+#configuration_page .upload_btn {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  /* Body */
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #FFFFFFFF;
+  /* white */
+  background: #535CE8FF;
+  /* primary-500 */
+  opacity: 1;
+  border: none;
+  border-radius: .6rem;
+  /* border-m */
+}
+
+/* Hover */
+#configuration_page .upload_btn:hover {
+  color: #FFFFFFFF;
+  /* white */
+  background: #3A45E4FF;
+  /* primary-550 */
+  
+  /* Pressed */
+}
+#configuration_page .upload_btn:hover:active {
+  color: #FFFFFFFF;
+  /* white */
+  background: #202DE1FF;
+  /* primary-600 */
+}
+
+/* Disabled */
+#configuration_page .upload_btn:disabled {
+  opacity: 0.4;
+}
+
+#configuration_page .dmg_uploaded {}
+
+#configuration_page .three_d_model {
+  /* width: 66.5rem;*/
+
+  background-color: #f8f9fa;
+  border: .1rem dotted blue;
+}
+
+#configuration_page .activity-card {
+  background-color: white;
+}
+
+#configuration_page .explicite_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FFFFFFFF;
+  /* white */
+  border-radius: .6rem;
+ 
+  /* border-m */
+  box-shadow: 0px 4px 9px #171a1f, 0px 0px 2px #171a1f;
+}
+#configuration_page .texplicite{
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #16BC9CFF;
+}
+
+
+#configuration_page .standard_box {
+
+ 
+  background: #FFFFFFFF;
+  /* white */
+  
+  border-radius: .6rem;
+  /* border-m */
+  box-shadow: 0px 4px 9px #171a1f, 0px 0px 2px #171a1f;
+}
+
+
+
+#configuration_page .tbussiness {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 1.0rem;
+  line-height: 1.6rem;
+  color: #323842FF;
+}
+
+#configuration_page .car_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  fill: #171A1FFF;
+}
+#configuration_page .car_logo_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#configuration_page .cost_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Poppins; 
+}
+#configuration_page .tcost_list{
+  display: flex;
+  justify-content: space-around;
+  font-family: Poppins;
+  font-size: 1rem;
+}
+
+#configuration_page .rs_each {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: .9rem;
+  line-height: 1.4rem;
+  color: #32384296;
+  /* background-color: red; */
+}
+#configuration_page .total_cost{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#configuration_page .total_price {
+ 
+  font-family: Poppins;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: #323842FF;
+}
+#configuration_page .explicite_box{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 1rem;
+}
+#configuration.page .standard_box{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+#configuration_page .material_box{
+  display: flex;
+  flex-direction: column;
+  max-height: 48rem;
+
+}
+#configuration_page .quality_btn{
+  /* margin-left: 1.4rem; */
+ background: #FFFFFFFF; /* white */
+ border-radius: .6rem; /* border-m */
+ border-width: .1rem;
+ border-color: #DEE1E6FF; /* neutral-300 */
+ border-style: solid;
+ box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
+ align-items:center;
+ 
+}
+#configuration_page .minus {
+
+ 
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  align-items: center;
+  justify-content: center;
+  color: #565E6CFF; /* neutral-600 */
+  background: #F3F4F6FF; /* neutral-200 */
+  opacity: 1;
+  border: none;
+  border-radius: .6rem; /* border-m */
+  /* gap: .4rem; */
+}
+#configuration_page .minus .icon {
+ 
+  fill: #565E6CFF; /* neutral-600 */
+}
+/* Hover */
+#configuration_page .minus:hover {
+  color: #565E6CFF; /* neutral-600 */
+  background: #DEE1E6FF; /* neutral-300 */
+}
+/* Pressed */
+#configuration_page .minus:hover:active {
+  color: #565E6CFF; /* neutral-600 */
+  background: #CFD2DAFF; /* neutral-350 */
+}
+/* Disabled */
+#configuration_page .minus:disabled {
+  opacity: 0.4;
+}
+
+#configuration_page .plus {
+
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFFFF; /* white */
+  background: #535CE8FF; /* primary-500 */
+  opacity: 1;
+  border: none;
+  border-radius: 6px; /* border-m */
+  gap: 4px;
+}
+#configuration_page .plus .icon {
+
+  fill: #FFFFFFFF; /* white */
+}
+/* Hover */
+#configuration_page .plus:hover {
+  color: #FFFFFFFF; /* white */
+  background: #3A45E4FF; /* primary-550 */
+}
+/* Pressed */
+#configuration_page .plus:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #202DE1FF; /* primary-600 */
+}
+/* Disabled */
+#configuration_page .plus:disabled {
+  opacity: 0.4;
+}
+#configuration_page .tpart_quality{
+  display: flex;
+  justify-content: start;
+  font-family: Poppins; 
+  color: black;
+  
+}
+#configuration_page .tprocess_material{
+  display: flex;
+  justify-content: start;
+  font-family: Poppins;
+  color: black;
+  margin-top: 2rem;
+}
+#configuration_page .tprocess{
+  display: flex;
+  justify-content: start;
+  font-family: Poppins;
+
+}
+#configuration_page .process_select{
+  display: flex;
+  justify-content: start;
+
+}
+#configuration_page .tpart_finish{
+  display: flex;
+  justify-content: start;
+  color: black;
+
+}
+#configuration-page .tnormal_para{
+  display: flex;
+  justify-content: start;
+  
+}
