@@ -26,7 +26,7 @@ function App() {
           <Route exact path="/signin"
             element={<Signin />}>
           </Route>
-          <Route exact path="/Manufacture_Registration1"
+          <Route exact path="/Manufacture_Registration"
             element={<Manufacturer_Registration/>}>
           </Route>
           <Route exact path="/Manufacture_Registration1"

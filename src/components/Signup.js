@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom'
+import { Stack } from "@mui/material";
+import { useTheme } from '@mui/material/styles';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 function Signup() {
-    const navigate= useNavigate();
-    const navigatetosignin=() => {
+    const navigate = useNavigate();
+    const navigatetosignin = () => {
         navigate("/signin")
     }
+
     return (
         <div id="customer_sign_in2" >
 
@@ -14,7 +22,7 @@ function Signup() {
                     <div className="container">
                         <form action="#">
                             <div className="form-group">
-                                <input type="search" placeholder="Search Here" autofocus/>
+                                <input type="search" placeholder="Search Here" autofocus />
                             </div>
                         </form>
                         <button type="button" className="close-searchbox">
@@ -24,7 +32,7 @@ function Signup() {
                 </div>
 
                 <div className="content-wrapper">
-                    <section className="Login-wrap ptb-100 main_content" style={{backgrounColor:"#bebebe"}}>
+                    <section className="Login-wrap ptb-100 main_content" style={{ backgrounColor: "#bebebe" }}>
                         <div className="container">
                             <div className="row1">
                                 <div className="col-xxl-8 col-xl-8 col-lg-8 col-sm-11 col-md-11 one_col">
@@ -45,63 +53,103 @@ function Signup() {
                                                                             <div className="col-5">
                                                                                 <div className="form-group">
                                                                                     <p>full name</p>
-                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required/>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required />
                                                                                 </div>
                                                                             </div>
                                                                             <div className="col-5">
                                                                                 <div className="form-group">
                                                                                     <p>company name</p>
-                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required/>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required />
                                                                                 </div>
                                                                             </div>
                                                                             <div className="col-5">
                                                                                 <div className="form-group">
                                                                                     <p>contact number</p>
-                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required/>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required />
                                                                                 </div>
                                                                             </div>
                                                                             <div className="col-5">
                                                                                 <div className="form-group">
                                                                                     <p>industry</p>
-                                                                                    <div className="process_select">
-                                                                                        <select className="form-select text_box tsub_process" aria-label="Default select example">
-                                                                                            <option value="0" selected></option>
-                                                                                            <option value="1">Aerospace and Defense</option>
-                                                                                            <option value="2">Automotive</option>
-                                                                                            <option value="3">consumer Products</option>
-                                                                                            <option value="4">Design Services</option>
-                                                                                            <option value="5">Education</option>
-                                                                                            <option value="6">Electronics and Semiconductors</option>
-                                                                                            <option value="7">Energy</option>
-                                                                                            <option value="8">Hardware Startups</option>
-                                                                                            <option value="9">Heavy industry</option>
-                                                                                            <option value="10">Industrial Equipment</option>
-                                                                                            <option value="11">Instrumentation</option>
-                                                                                            <option value="12">Lighting</option>
-                                                                                            <option value="13">Medical and Dental</option>
-                                                                                            <option value="14">Robotics</option>
-                                                                                            <option value="15">Special Purpose Machinaries</option>
-                                                                                            <option value="16">Supply Chain and Purchasing</option>
-                                                                                        </select>
-                                                                                    </div>
+                                                                                    <InputLabel id="demo-simple-select-label" sx={{
+                                                                                        width: "100%",
+                                                                                        backgroundColor: "#f1f2fd",
+                                                                                        fontSize: "10px",
+                                                                                        marginTop: "0",
+                                                                                        marginLeft: "3%"
+                                                                                    }} />
+                                                                                    <Select
+                                                                                        sx={{
+                                                                                            width: "100%",
+                                                                                            backgroundColor: "#f1f2fd",
+                                                                                            fontSize: "10px",
+                                                                                            marginTop: "0",
+                                                                                            marginLeft: "2%"
+                                                                                        }}
+                                                                                        labelId="demo-simple-select-label"
+                                                                                        id="demo-simple-select"
+                                                                                    >
+                                                                                        <MenuItem value="0" selected></MenuItem>
+                                                                                        <MenuItem value="1">Aerospace and Defense</MenuItem>
+                                                                                        <MenuItem value="2">Automotive</MenuItem>
+                                                                                        <MenuItem value="3">consumer Products</MenuItem>
+                                                                                        <MenuItem value="4">Design Services</MenuItem>
+                                                                                        <MenuItem value="5">Education</MenuItem>
+                                                                                        <MenuItem value="6">Electronics and Semiconductors</MenuItem>
+                                                                                        <MenuItem value="7">Energy</MenuItem>
+                                                                                        <MenuItem value="8">Hardware Startups</MenuItem>
+                                                                                        <MenuItem value="9">Heavy industry</MenuItem>
+                                                                                        <MenuItem value="10">Industrial Equipment</MenuItem>
+                                                                                        <MenuItem value="11">Instrumentation</MenuItem>
+                                                                                        <MenuItem value="12">Lighting</MenuItem>
+                                                                                        <MenuItem value="13">Medical and Dental</MenuItem>
+                                                                                        <MenuItem value="14">Robotics</MenuItem>
+                                                                                        <MenuItem value="15">Special Purpose Machinaries</MenuItem>
+                                                                                        <MenuItem value="16">Supply Chain and Purchasing</MenuItem>
+                                                                                    </Select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="col-5">
+                                                                                <div className="form-group">
+                                                                                    <p>City</p>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="col-5">
+                                                                                <div className="form-group">
+                                                                                    <p>Pin Code</p>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required />
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="col-5">
+                                                                                <div className="form-group">
+                                                                                    <p>State</p>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="col-5">
+                                                                                <div className="form-group">
+                                                                                    <p>Country</p>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required />
                                                                                 </div>
                                                                             </div>
                                                                             <div className="col-12">
                                                                                 <div className="form-group">
                                                                                     <p>work email</p>
-                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="example.abc@workemail.com" required/>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="example.abc@workemail.com" required />
                                                                                 </div>
                                                                             </div>
                                                                             <div className="col-5">
                                                                                 <div className="form-group">
                                                                                     <p>password</p>
-                                                                                    <input className="text_box2" id="text" name="subprocess" type="password" placeholder="Enter at least 8+ characters" required/>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="password" placeholder="Enter at least 8+ characters" required />
                                                                                 </div>
                                                                             </div>
                                                                             <div className="col-5">
                                                                                 <div className="form-group">
                                                                                     <p>confirm password</p>
-                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="Enter at least 8+ characters" required/>
+                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="Enter at least 8+ characters" required />
                                                                                 </div>
                                                                             </div>
                                                                             <div className="form-group col-12">
@@ -112,7 +160,7 @@ function Signup() {
                                                                             <div className="col-12 dont_have_acc">
                                                                                 <p className="tdont_have">already have an account?</p>
                                                                                 <button className="btn_sign_up" onClick={navigatetosignin}>sign in</button>
-                                                                                
+
                                                                             </div>
                                                                         </div>
                                                                     </form>
@@ -130,7 +178,7 @@ function Signup() {
                                 <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-11 col-md-11 second_col">
 
                                     <div className="img_machine">
-                                        <img src="../image_quote/customer sign up img.png" alt="machine"/>
+                                        <img src="../image_quote/customer sign up img.png" alt="machine" />
                                     </div>
                                 </div>
 
