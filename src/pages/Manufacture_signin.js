@@ -23,9 +23,6 @@ function Manufacture_signin() {
                         </button>
                     </div>
                 </div>
-
-
-
                 <div class="content-wrapper">
 
                     <section class="Login-wrap ptb-100 main_content">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from 'react-router-dom'
 import { Stack } from "@mui/material";
 import { useTheme } from '@mui/material/styles';
@@ -7,8 +7,77 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import axios from "../api/axios";
+
+const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
 function Signup() {
+    const userRef = useRef();
+    const errRef = useRef();
+    const REGISTER_URL = '/register';
+
+    const [pwd, setPwd] = useState('');
+    const [vaildPwd, setValidPwd] = useState(false);
+    const [pwdFocus, setPwdFocus] = useState(false);
+
+    const [matchPwd, setMatchPwd] = useState('');
+    const [vaildMatch, setValidMatch] = useState(false);
+    const [matchFocus, setmatchFocus] = useState(false);
+
+    const [errMsg, setErrMsg] = useState('');
+    const [success, setSuccess] = useState(false);
+
+    // useEffect(() => {
+    //     userRef.current.focus();
+    // }, [])
+
+    useEffect(() => {
+        const result = PWD_REGEX.test(pwd);
+        console.log(result)
+        console.log(pwd);
+        setValidPwd(result);
+        const match = pwd == matchPwd;
+        setValidMatch(match);
+    }, [pwd, matchPwd])
+
+    useEffect(() => {
+        setErrMsg('');
+    }, [pwd, matchPwd])
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        // if button enabled with JS hack
+        const v2 = PWD_REGEX.test(pwd);
+        if ( !v2) {
+            setErrMsg("Invalid Entry");
+            return;
+        }
+        try {
+            const response = await axios.post(REGISTER_URL,
+                JSON.stringify({  pwd }),
+                {
+                    headers: { 'Content-Type': 'application/json' },
+                    withCredentials: true
+                }
+            );
+            console.log(response?.data);
+            console.log(response?.accessToken);
+            console.log(JSON.stringify(response))
+            setSuccess(true);
+            //clear state and controlled inputs
+            //need value attrib on inputs for this
+            setPwd('');
+            setMatchPwd('');
+        } catch (err) {
+            if (!err?.response) {
+                setErrMsg('No Server Response');
+            }  else {
+                setErrMsg('Registration Failed')
+            }
+            errRef.current.focus();
+        }
+    }
+
     const navigate = useNavigate();
     const navigatetosignin = () => {
         navigate("/signin")
@@ -16,44 +85,56 @@ function Signup() {
 
     return (
         <div id="customer_sign_in2" >
-
-            <div className="page-wrapper" >
-                <div className="search-area">
-                    <div className="container">
-                        <form action="#">
-                            <div className="form-group">
-                                <input type="search" placeholder="Search Here" autofocus />
-                            </div>
-                        </form>
-                        <button type="button" className="close-searchbox">
-                            <i className="ri-close-line"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div className="content-wrapper">
-                    <section className="Login-wrap ptb-100 main_content" style={{ backgrounColor: "#bebebe" }}>
+            {success ? (
+                <section>
+                    <h1>Success!</h1>
+                    <p onClick={navigatetosignin}>
+                        Sign In
+                    </p>
+                </section>
+            ) : (
+                <div className="page-wrapper" >
+                    <div className="search-area">
                         <div className="container">
-                            <div className="row1">
-                                <div className="col-xxl-8 col-xl-8 col-lg-8 col-sm-11 col-md-11 one_col">
-                                    <div className=" col-12 login-form-wrap">
-
-                                        <div className="login-form login_form_row">
-                                            <div className="col-12 login-body login_body_row">
-                                                <form className="form-wrap" action="#">
-                                                    <div className="row process_row">
-                                                        <div className=" col-11 login-form-wrap">
-                                                            <div>
-                                                                <h2 className="company_information_header">create an account</h2>
-                                                            </div>
-                                                            <div className="login-form login_form_row">
-                                                                <div className="col-12 login-body login_body_row">
-                                                                    <form className="form-wrap" action="#">
+                            <form action="#">
+                                <div className="form-group">
+                                    <input type="search" placeholder="Search Here" autofocus />
+                                </div>
+                            </form>
+                            <button type="button" className="close-searchbox">
+                                <i className="ri-close-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div className="content-wrapper">
+                        <section className="Login-wrap ptb-100 main_content" style={{ backgrounColor: "#bebebe" }}>
+                            <div className="container">
+                                <div className="row1">
+                                    <p ref={errRef} className={errMsg ? "errmsg" :
+                                        "offscreen"} aria-live="assertive">{errMsg}</p>
+                                    <div className="col-xxl-8 col-xl-8 col-lg-8 col-sm-11 col-md-11 one_col">
+                                        <div className=" col-12 login-form-wrap">
+                                            <div className="login-form login_form_row">
+                                                <div className="col-12 login-body login_body_row">
+                                                    <form className="form-wrap" action="#" onSubmit={handleSubmit}>
+                                                        <div className="row process_row">
+                                                            <div className=" col-11 login-form-wrap">
+                                                                <div>
+                                                                    <h2 className="company_information_header">create an account</h2>
+                                                                </div>
+                                                                <div className="login-form login_form_row">
+                                                                    <div className="col-12 login-body login_body_row">
+                                                                        {/* <form className="form-wrap" action="#"> */}
                                                                         <div className="row process_row">
                                                                             <div className="col-5">
                                                                                 <div className="form-group">
                                                                                     <p>full name</p>
-                                                                                    <input className="text_box2" id="text" name="subprocess" type="text" placeholder="" required />
+                                                                                    <input
+                                                                                        className="text_box2"
+                                                                                        id="text" name="subprocess"
+                                                                                        type="text"
+                                                                                        placeholder=""
+                                                                                        required />
                                                                                 </div>
                                                                             </div>
                                                                             <div className="col-5">
@@ -163,31 +244,32 @@ function Signup() {
 
                                                                             </div>
                                                                         </div>
-                                                                    </form>
+                                                                        {/* </form> */}
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
 
 
-                                                </form>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-11 col-md-11 second_col">
+                                    <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-11 col-md-11 second_col">
 
-                                    <div className="img_machine">
-                                        <img src="../image_quote/customer sign up img.png" alt="machine" />
+                                        <div className="img_machine">
+                                            <img src="../image_quote/customer sign up img.png" alt="machine" />
+                                        </div>
                                     </div>
+
                                 </div>
-
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     )
 }

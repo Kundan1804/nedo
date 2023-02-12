@@ -1,18 +1,18 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Signin from './components/Signin';
-import Signup from './components/Signup';
-import Manufacturer_Registration from './components/Manufacturer_Registration';
-import Manufacture_registration2 from './components/Manufacture_registration2';
-import Manufacture_registration3 from './components/Manufacture_registration3';
-import Manufacture_registration4 from './components/Manufacture_registration4';
-import Manufacture_signin from './components/Manufacture_signin';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Manufacturer_Registration1 from './components/Manufacture_registration1';
-import Step3 from './components/Step3';
-import Msaas from "./components/Msaas"
+import Signin from './pages/Signin';
+import Signup from './pages/Signup';
+import Manufacturer_Registration from './pages/Manufacturer_Registration';
+import Manufacture_registration2 from './pages/Manufacture_registration2';
+import Manufacture_registration3 from './pages/Manufacture_registration3';
+import Manufacture_registration4 from './pages/Manufacture_registration4';
+import Manufacture_signin from './pages/Manufacture_signin';
+import Header from './pages/Header';
+import Footer from './pages/Footer';
+import Manufacturer_Registration1 from './pages/Manufacture_registration1';
+import Step3 from './pages/Step3';
+import Msaas from "./pages/Msaas"
 
 function App() {
   return (
