@@ -13,6 +13,7 @@ import Footer from './pages/Footer';
 import Manufacturer_Registration1 from './pages/Manufacture_registration1';
 import Step3 from './pages/Step3';
 import Msaas from "./pages/Msaas"
+import CustomerDashboard from './pages/customerDashboard/CustomerDashboard';
 
 function App() {
   return (
@@ -44,12 +45,13 @@ function App() {
           <Route exact path="/Manufacture_signin"
             element={<Manufacture_signin />}>
           </Route>
-          <Route exact path="/3"
-            element={<Step3 />}>
-          </Route>
           <Route exact path="/msaas"
             element={<Msaas />}>
           </Route>
+          <Route exact path="/CustomerDashboard"
+            element={<CustomerDashboard />}>
+          </Route>
+
         </Routes>
         <Footer />
       </Router>
